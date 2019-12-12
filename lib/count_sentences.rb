@@ -13,7 +13,6 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\!|\?/).count
-    binding.pry
+    self.split(/\.|\!|\?/).delete_if { |string| string == ""}.count
   end
 end

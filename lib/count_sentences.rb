@@ -13,6 +13,6 @@ class String
   end
 
   def count_sentences
-    self.split(/\.|\!|\?/).delete_if { |string| string == ""}.count
+    self.split(/\.|\!|\?/).delete_if { |string| string == ""}.size
   end
 end
